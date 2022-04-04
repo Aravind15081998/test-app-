@@ -1,3 +1,3 @@
 #! /bin/bash
-sudo systemctl stop httpd
-sudo systemctl disable httpd
+systemctl stop httpd
+systemctl disable httpd
