@@ -5,13 +5,13 @@ files:
    destination: /var/www/html/
 hooks:
  BeforeInstall:
-  - location: scripts/httpd_install.sh
+  - location: scripts/install.sh
           timeout: 300
           runas: root
-  - location: scripts/httpd_start.sh
+  - location: scripts/start.sh
           timeout: 300
           runas: root
  ApplicationStop:
-  - location: scripts/httpd_stop.sh
+  - location: scripts/stop.sh
           timeout: 300
           runas: root
